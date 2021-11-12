@@ -75,6 +75,9 @@ header .top .menu ul li a {
   top: 50%;
   transform: translate(-50%, -50%);
 }
+.bodywrap .imgslide a span:hover {
+  opacity: 0.8;
+}
 .bodywrap .contents {
   /* background: yellow; */
   margin-top: 5px;
