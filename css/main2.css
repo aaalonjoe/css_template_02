@@ -1,6 +1,5 @@
 
 /* common */
-
 * {
     margin: 0 auto;
     padding: 0;
@@ -8,11 +7,9 @@
     font-family: "맑은 고딕", sans-serif;
     color: #222328;
 }
-
 body {
     width: 1000px;
     font-size: 20px;
-    
 }
 a {
     text-decoration: none;
@@ -24,188 +21,180 @@ a {
     clear: both;
 }
 
-/* header 영역 */
-header {
-    /* background: tomato; */
-    float: left;
+
+/*  header 영역  */
+header {    
+    float: left;    
     width: 20%;
 }
-header .top {
+header .top {    
     float: left;
     background: #eee;
-    height: 670px;
+    height: 675px;
 }
 header .top .logo {
-    /* border: 1px solid #000; */
     width: 200px;
     height: 40px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 header .top .logo img {
-    text-align: center;
-    margin-left: 13px;
+    margin-left: 15px;
 }
+
 header .top .menu {
-    /* background: tomato; */
     width: 90%;
-    text-align: center;
+    text-align: center;    
 }
-header .top .menu .navi li {
-    /* border: 1px solid #000;
-    box-sizing: border-box; */
+header .top .menu li {
     font-size: 16px;
-    font-weight: 700;
-    
+    font-weight: 700;       
 }
-header .top .menu .navi li a {
+header .top .menu li a {
     color: #fff;
+    background: #222328; 
     padding: 10px 0;
-    background: #222328;
 }
-header .top .menu .navi li a:hover {
+header .top .menu li a:hover {
     background: #930930;
-    color: yellow;
+    color: #ff0;
 }
 
 /* bodywrap 영역 */
 .bodywrap {
-    /* background: yellow; */
     float: right;
-    width: 800px;
+    width: 80%;
 }
 
 /* bodywrap > imgslide 영역 */
-.bodywrap .imgslide {
+.bodywrap > .imgslide {
     height: 350px;
     position: relative;
 }
-.bodywrap .imgslide .imgtext {
+.bodywrap > .imgslide .imgtext {
     width: 300px;
     height: 50px;
     text-align: center;
-    color: #fff;
     line-height: 50px;
-    background: rgba(40,40,40, 0.3);
+    color: #fff;
+    background: rgba(40, 40, 40, 0.3);
     font-weight: 700;
-    padding: 5px 40px;
+    padding: 10px 40px;
 
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
-/* bodywrap > contents 영역 */
-.bodywrap .contents {
+/* .bodywrap > .contents 영역 */
+.bodywrap .contents {    
     height: 200px;
-    /* background: tomato; */
-    margin-top: 10px;
+    margin-top: 15px;
 }
-
-/* contents > tabmenu 영역 */
+/* contents > tapmenu 영역 */
 .bodywrap .contents .tabmenu {
     width: 40%;
-    float: left;
-    padding: 0 5px;
+    float: left;  
+    padding: 0 10px;  
     box-sizing: border-box;
-    /* background: red; */
 }
 .bodywrap .contents .tabmenu > li {
     float: left;
     width: 80px;
-    /* border: 1px solid #000;
-    box-sizing: border-box; */
 }
 .bodywrap .contents .tabmenu > li > a {
     font-size: 14px;
     text-align: center;
-    background: #ccc;
+    background-color: #ccc;
     border: 1px solid #ddd;
-    border-bottom: 0;
     padding: 5px 10px;
+    border-bottom-width: 0;
 }
 .bodywrap .contents .tabmenu > li > a:hover {
-    opacity: 0.6;
+    opacity: 0.5;
 }
 .bodywrap .contents .tabmenu > li.active > a {
-    background: #fff;
+    background-color: #fff;
 }
-.bodywrap .contents .tabmenu > li .notice {
+
+.bodywrap .contents .tabmenu > li div.notice {
     width: 290px;
     border: 1px solid #ddd;
     font-size: 13px;
     padding: 10px 5px;
-    /* background: green; */
 }
-.bodywrap .contents .tabmenu > li .notice ul {
-    /* background: yellowgreen; */
+.bodywrap .contents .tabmenu > li div.notice ul {
+    
 }
-.bodywrap .contents .tabmenu > li .notice ul li {
-    /* border: 1px solid #000;
-    box-sizing: border-box; */
+
+.bodywrap .contents .tabmenu > li div.notice ul li {
     padding: 10px 0;
 }
-.bodywrap .contents .tabmenu > li .notice ul li:hover {
-    font-weight: 700;
-}
-.bodywrap .contents .tabmenu > li .notice ul li span {
-    float: right;
-}
-.bodywrap .contents .tabmenu > li .notice ul li:nth-child(even) {
+
+.bodywrap .contents .tabmenu > li div.notice ul li:nth-child(even) {
     background: #ccc;
 }
+
+.bodywrap .contents .tabmenu > li div.notice ul li:hover {
+    font-weight: 700;
+}
+
+.bodywrap .contents .tabmenu > li div.notice ul li span {
+    float: right;
+}
+
 
 /* contents > otherwrap 영역 */
 .bodywrap .contents .otherwrap {
     width: 60%;
-    height: 199px;
     float: right;
-    /* background: skyblue; */
+    height: 199px;
     overflow: hidden;
 }
 .bodywrap .contents .otherwrap .banner {
-    /* background: red; */
     float: left;
     width: 60%;
     height: 199px;
-    overflow: hidden;
     position: relative;
 }
+
 .bodywrap .contents .otherwrap h4 {
     height: 40px;
+    line-height: 40px;
     color: #fff;
     background: rgba(40,40,40, 0.3);
     font-weight: 700;
     text-align: center;
 
     position: absolute;
-    left: 0px;
-    top: 0px;
+    left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
 }
-.bodywrap .contents .otherwrap .bntext {
+
+.bodywrap .contents .otherwrap .banner .bntext {
     width: 200px;
-    
 }
+
 .bodywrap .contents .otherwrap .shortcut {
-    /* background: yellowgreen; */
     float: right;
     width: 38.5%;
     margin-left: 1.5%;
     position: relative;
 }
-.bodywrap .contents .otherwrap .sctext {
-    width: 150px;
-    
-}
-.bodywrap .contents .otherwrap .shortcut img {
-    height: 199px;
-}
-.bodywrap .contents .otherwrap .div img {
-    width: 100%;
+
+.bodywrap .contents .otherwrap .shortcut .sctext {
+    width: 100px;
 }
 
+.bodywrap .contents .otherwrap .shortcut img {
+    height: 199px;   
+}
+
+.bodywrap .contents .otherwrap div img {
+    width: 100%;
+}
 
 
 /* footer 영역 */
@@ -218,27 +207,27 @@ footer {
 }
 footer .btlogo {
     float: left;
-    /* background: orange; */
     width: 200px;
     height: 100px;
 }
 footer .btlogo img {
-    margin: 30px 13px;
+    margin-top: 33px;
+    margin-left: 15px;
 }
+
 footer .site {
     float: right;
     font-size: 14px;
     margin-right: 100px;
 }
 footer .site .btmenu {
-    /* background: skyblue; */
     margin-top: 15px;
-    padding: 0 40px;
+    padding-left: 40px;
 }
 footer .site .copy {
-    /* background: violet; */
     margin-top: 30px;
 }
+
 footer .site .btmenu ul li {
     float: left;
     margin-right: 40px;
